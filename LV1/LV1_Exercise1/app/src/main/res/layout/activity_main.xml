@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtView_EnterHeight"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/topMargin_txtViewHeightWeight"
+        android:textColor="@color/textColor_allText"
+
+        android:text="@string/enterHeightString"
+        />
+
+    <EditText
+        android:id="@+id/editTxt_EnterHeight"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtView_EnterHeight"
+        android:gravity="center"
+
+        android:textColorHint="@color/textColor_allText"
+        android:textColor="@color/textColor_allText"
+        android:hint="@string/editTextHeight_Hint"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/txtView_EnterWeight"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTxt_EnterHeight"
+        android:layout_marginTop="@dimen/topMargin_txtViewHeightWeight"
+
+        android:textColor="@color/textColor_allText"
+        android:text = "@string/enterWeightString"
+        />
+
+    <EditText
+        android:id="@+id/editTxt_EnterWeight"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtView_EnterWeight"
+        android:gravity="center"
+
+        android:textColorHint="@color/textColor_allText"
+        android:textColor="@color/textColor_allText"
+        android:hint="@string/editTextWeight_Hint"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/btnCalculate"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTxt_EnterWeight"
+        android:layout_margin="@dimen/topMargin_btnCalculate_from_editTxtEnterWeight"
+
+        android:text="@string/btnCalculate"
+        />
+
+    <TextView
+        android:id="@+id/txtView_showBMInumerically"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/textViewsBMI_rightMargin"
+
+        android:visibility="invisible"
+        android:textColor="@color/textColor_allText"
+        />
+
+    <TextView
+        android:id="@+id/txtView_BMIword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtView_showBMInumerically"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/textViewsBMI_rightMargin"
+        android:layout_marginTop="@dimen/textViewsBMI_topMargins"
+
+        android:visibility="invisible"
+        android:textColor="@color/textColor_allText"
+        />
+
+    <TextView
+        android:id="@+id/txtView_BMIdescription"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtView_BMIword"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/textViewsBMI_topMargins"
+
+        android:visibility="invisible"
+        android:textColor="@color/textColor_allText"
+        />
+
+    <ImageView
+        android:id="@+id/imgView_BMIimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/txtView_showBMInumerically"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="@dimen/imgView_BMIillustration"
+
+        android:visibility="invisible"
+        />
+
+
+</RelativeLayout>

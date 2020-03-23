@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="topMargin_txtViewHeightWeight">20dp</dimen>
+
+    <dimen name="topMargin_btnCalculate_from_editTxtEnterWeight">10dp</dimen>
+    <dimen name="textViewsBMI_rightMargin">25dp</dimen>
+    <dimen name="textViewsBMI_topMargins">20dp</dimen>
+
+    <dimen name="imgView_BMIillustration">10dp</dimen>
+</resources>

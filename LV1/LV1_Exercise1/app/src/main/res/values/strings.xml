@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+
+    <string name="malnourishedString">Malnourished</string>
+    <string name="healthyString">Healthy</string>
+    <string name="overweightString">Overweight</string>
+    <string name="obeseString">Obese</string>
+
+    <string name="malnourishedDescription">Malnutrition is a condition that results from eating a diet in which one or more nutrients are either not enough or are too much such that the diet causes health problems.
+        It may involve calories, protein, carbohydrates, vitamins or minerals. Undernourishment is most often due to not enough high-quality food being available to eat. This is often related to high food prices and poverty.</string>   <!-- source : https://en.wikipedia.org/wiki/Malnutrition -->
+
+    <string name="healthyDescription">Healthy weight means you have no excess weight, and should keep your diet as is if it includes a variety of meats, fruits, and vegetables. Although your weight is fine,
+        some form of physical activity is highly recommended if you aren\'t performing any.</string>
+
+    <string name="overweightDescription">Being overweight or fat is having more body fat than is optimally healthy. Being overweight is especially common where food supplies are plentiful and lifestyles are sedentary
+        Being overweight has been identified as a cause of cancer, and is projected to overtake smoking as the primary cause of cancer in developed countries as cases of smoking-related cancer dwindle.
+    </string>   <!-- source : https://en.wikipedia.org/wiki/Overweight -->
+
+    <string name="obeseDescription">
+        Obesity is a medical condition in which excess body fat has accumulated to an extent that it may have a negative effect on health.
+        Obesity increases the likelihood of various diseases and conditions, particularly cardiovascular diseases, type 2 diabetes, obstructive sleep apnea, certain types of cancer, osteoarthritis, and depression.
+    </string>   <!-- source : https://en.wikipedia.org/wiki/Obesity -->
+    
+    <string name="enterHeightString"><font size = "20">Enter your height in meters</font></string>
+    <string name="enterWeightString"><font size = "20">Enter your weight in kilograms</font></string>
+
+    <string name="editTextHeight_Hint">height (m)</string>
+    <string name="editTextWeight_Hint">weight (kg)</string>
+
+    <string name="btnCalculate">Calculate</string>
+
+
+</resources>
