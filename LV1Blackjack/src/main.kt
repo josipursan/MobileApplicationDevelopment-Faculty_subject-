@@ -2,40 +2,10 @@ import java.util.Scanner
 
 fun main(args:Array<String>)
 {
-
-    /* Testing user input and checking user input */
     val reader = Scanner(System.`in`)
 
-    /*
-    print("Enter Y or y!")
-    val userInput : String? = readLine()
-    val correctInput : Char = 'y'
-    val correctInputUpper : Char = 'Y'
-
-    if(userInput != correctInput.toString() || userInput != correctInputUpper.toString())
-    {
-        println("That aint right nigga")
-    }
-
-    println("You have entered : ${userInput}")
-    /* Testing user input and checking user input */
-
-     */
-
-    /* Testing creation of map for card strengths */
-
-
-    /* Testing creation of map for card strengths */
-
-    /* Testing creation of map for total card count */
     var cardDeck = mutableMapOf<String, Int>("Ace" to 4, "Two" to 4, "Three" to 0, "Four" to 0, "Five" to 0, "Six" to 0, "Seven" to 0, "Eight" to 0,
             "Nine" to 0, "Ten" to 0, "Jack" to 4, "Queen" to 4, "King" to 0)
-
-    println(cardDeck)
-    //cardDeck["Ace"] = 2     /* Mijenjanje broja asova u decku */
-    //println(cardDeck)
-    /* Testing creation of map for total card count */
-
 
     val newDealer = Dealer()
     println("Do you want to play? (y/n)")
