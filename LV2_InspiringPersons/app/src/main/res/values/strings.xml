@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Inspiring Computer scientists</string>
+
+    <string name="addPersonButton_string">Add person</string>
+
+    <string name = "addPerson_nameBirthDeath_placeholder">Name, year of birth, year of death</string>
+    <string name = "addPerson_shortDescription_placeholder">Short description</string>
+
+
+</resources>
