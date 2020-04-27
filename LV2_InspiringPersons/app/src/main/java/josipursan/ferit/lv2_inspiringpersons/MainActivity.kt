@@ -52,7 +52,6 @@ class MainActivity : AppCompatActivity() {
         {
             if(resultCode == RESULT_OK)
             {
-                //val nameBirthDeath : String = data!!.getStringExtra("result_nameBirthDeath")
                 val inspiringPerson_creation = InspiringPerson(R.drawable.ic_person_black, data?.getStringExtra("NameBirthDeath") ?: "",
                     data?.getStringExtra("ShortDescription") ?: "")
                 val testToast = Toast.makeText(this, data?.getStringExtra("ShortDescription") ?: "", Toast.LENGTH_LONG).show()

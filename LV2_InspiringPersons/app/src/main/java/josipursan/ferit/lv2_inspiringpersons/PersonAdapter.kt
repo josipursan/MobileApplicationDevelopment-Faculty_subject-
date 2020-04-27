@@ -5,13 +5,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.inspiring_person.view.*
 
 class PersonAdapter(private val personList : List<InspiringPerson>) : RecyclerView.Adapter<PersonAdapter.PersonViewHolder>()
 {
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.inspiring_person,
             parent, false)
@@ -35,5 +35,4 @@ class PersonAdapter(private val personList : List<InspiringPerson>) : RecyclerVi
         val textView1 : TextView = itemView.textView_1
         val textView2 : TextView = itemView.textView_2
     }
-
 }
