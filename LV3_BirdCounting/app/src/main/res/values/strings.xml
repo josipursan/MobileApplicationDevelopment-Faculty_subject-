@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LV3_BirdCounting</string>
+    <string name="blue_bird">Blue bird</string>
+    <string name="yellow_bird">Yellow bird</string>
+    <string name="green_bird">Green bird</string>
+    <string name="red_bird">Red bird</string>
+    <string name="reset_counter_and_color">Reset counter and color</string>
+</resources>
