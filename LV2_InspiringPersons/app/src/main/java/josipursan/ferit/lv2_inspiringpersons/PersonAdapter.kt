@@ -1,5 +1,6 @@
 package josipursan.ferit.lv2_inspiringpersons
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +11,7 @@ import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.inspiring_person.view.*
 
-class PersonAdapter(private val personList : List<InspiringPerson>) : RecyclerView.Adapter<PersonAdapter.PersonViewHolder>()
+class PersonAdapter(private val personList : List<InspiringPerson>, val context : Context) : RecyclerView.Adapter<PersonAdapter.PersonViewHolder>()
 {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.inspiring_person,
@@ -25,6 +26,14 @@ class PersonAdapter(private val personList : List<InspiringPerson>) : RecyclerVi
         holder.imageView.setImageResource(currentItem.ImageReource)
         holder.textView1.text = currentItem.textFirstRow
         holder.textView2.text = currentItem.textSecondRow
+
+        holder.imageView.setOnClickListener()
+        {
+            var quotesArray : Array<String> = currentItem.quotes.split("|").toTypedArray()
+            var randomQuote = quotesArray.random()
+
+            val testToast = Toast.makeText(context, randomQuote, Toast.LENGTH_LONG).show()
+        }
     }
 
     override fun getItemCount() = personList.size
@@ -35,4 +44,5 @@ class PersonAdapter(private val personList : List<InspiringPerson>) : RecyclerVi
         val textView1 : TextView = itemView.textView_1
         val textView2 : TextView = itemView.textView_2
     }
+
 }

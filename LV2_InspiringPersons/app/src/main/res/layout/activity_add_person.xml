@@ -28,6 +28,16 @@
         android:layout_centerHorizontal="true"
         />
 
+    <EditText
+        android:id="@+id/editText_quoteInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter quotes(use | as separator)"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editText_shortDescription"
+        />
+
     <Button
         android:id="@+id/addPerson_button_activity2"
         android:layout_width="wrap_content"
@@ -35,7 +45,7 @@
 
         android:text="@string/addPersonButton_string"
 
-        android:layout_below="@id/editText_shortDescription"
+        android:layout_below="@id/editText_quoteInput"
         android:layout_centerHorizontal="true"
         />
 

@@ -23,6 +23,7 @@ class AddPersonActivity : AppCompatActivity() {
         {
             val editTextNameBirthDeath = findViewById<EditText>(R.id.editText_nameBirthDeath)
             val editTextShortDescription = findViewById<EditText>(R.id.editText_shortDescription)
+            val editTextQuoteInput = findViewById<EditText>(R.id.editText_quoteInput)
 
             if(editTextShortDescription.getText().toString().equals("") || editTextNameBirthDeath.getText().toString().equals(""))
             {
@@ -32,10 +33,12 @@ class AddPersonActivity : AppCompatActivity() {
             {
                 var editTextNameBirthDeath_value = editTextNameBirthDeath.text.toString()
                 var editTextShortDescription_value = editTextShortDescription.getText().toString()
+                var editTextQuoteInput_value = editTextQuoteInput.text.toString()
 
                 val newPerson : Intent = Intent()
                 newPerson.putExtra("NameBirthDeath", editTextNameBirthDeath_value)
                 newPerson.putExtra("ShortDescription", editTextShortDescription_value)
+                newPerson.putExtra("Quotes", editTextQuoteInput_value)
                 setResult(Activity.RESULT_OK, newPerson)
                 finish()
             }
